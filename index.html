@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexLib | Advanced Library System</title>
+    <title>AG lab | Advanced Library System</title> <!-- Renamed Title -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
     <div id="auth-screen" class="view">
         <div class="auth-container">
             <div class="auth-box" id="login-box">
-                <h1>NexLib Login</h1>
+                <h1>AG lab Login</h1> <!-- Renamed Heading -->
                 <div class="tab-group">
                     <button class="tab-btn active" onclick="switchAuthTab('user')">User</button>
                     <button class="tab-btn" onclick="switchAuthTab('admin')">Admin</button>
@@ -28,6 +28,11 @@
                     <button type="submit" class="main-btn">Login</button>
                 </form>
                 <p class="toggle-auth">Don't have an account? <a href="#" onclick="toggleAuthMode('register')">Register here</a></p>
+                
+                <!-- Added Credits[cite: 2] -->
+                <footer style="margin-top: 20px; text-align: center; font-size: 0.8rem; color: #64748b;">
+                    Developed by <strong>AG</strong>
+                </footer>
             </div>
 
             <div class="auth-box hidden" id="register-box">
@@ -46,48 +51,51 @@
     <!-- Admin Dashboard -->
     <div id="admin-dashboard" class="view hidden">
         <nav>
-            <div class="nav-brand">NexLib Admin</div>
+            <div class="nav-brand">AG lab Admin</div> <!-- Renamed Brand[cite: 2] -->
             <button class="logout-btn" onclick="logout()">Logout</button>
         </nav>
-        <div class="dashboard-grid">
-            <div class="sidebar">
-                <div class="stat-card">
-                    <h3 id="stat-total-books">0</h3>
-                    <p>Total Books</p>
-                </div>
-                <div class="stat-card">
-                    <h3 id="stat-total-users">0</h3>
-                    <p>Members</p>
-                </div>
-            </div>
-            <div class="main-content">
-                <section class="card">
-                    <h2>Add New Book</h2>
-                    <form id="add-book-form" class="inline-form">
-                        <input type="text" id="book-title" placeholder="Title" required>
-                        <input type="text" id="book-author" placeholder="Author" required>
-                        <input type="text" id="book-id" placeholder="Book ID" required>
-                        <button type="submit">Add Book</button>
-                    </form>
-                </section>
-                <section class="card">
-                    <h2>Inventory Management</h2>
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="admin-book-list"></tbody>
-                        </table>
+        <div class="container">
+            <div class="dashboard-grid">
+                <div class="sidebar">
+                    <div class="stat-card">
+                        <h3 id="stat-total-books">0</h3>
+                        <p>Total Books</p>
                     </div>
-                </section>
+                    <div class="stat-card">
+                        <h3 id="stat-total-users">0</h3>
+                        <p>Members</p>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <section class="card">
+                        <h2>Add New Book</h2>
+                        <form id="add-book-form" class="inline-form">
+                            <input type="text" id="book-title" placeholder="Title" required>
+                            <input type="text" id="book-author" placeholder="Author" required>
+                            <input type="text" id="book-id" placeholder="Book ID" required>
+                            <button type="submit">Add Book</button>
+                        </form>
+                    </section>
+                    <section class="card">
+                        <h2>Inventory Management</h2>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-book-list"></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
             </div>
+            <p style="text-align: center; margin-top: 20px; color: #64748b;">© 2026 AG lab | Credits: AG</p> <!-- Added Credits[cite: 2] -->
         </div>
     </div>
 
@@ -112,6 +120,7 @@
                     <div id="my-books-list" class="list-layout"></div>
                 </div>
             </div>
+            <p style="text-align: center; margin-top: 20px; color: #64748b;">Powered by AG lab | Designed by AG</p> <!-- Added Credits[cite: 2] -->
         </div>
     </div>
 
